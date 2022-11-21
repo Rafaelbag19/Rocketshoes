@@ -12,7 +12,7 @@
     <header class="header">
         <nav class="navbar">
             <div class="header-items">
-                <img src="assets/img/logo.svg" alt="Logo" class="logo">
+                <a href="index.html"><img src="assets/img/logo.svg" alt="Logo" class="logo"></a>
                 <input type="text" placeholder="Pesquisar" class="search">
                 <img src="assets/img/icon-bag.svg" alt="Sacola de compras">
             </div>
@@ -33,7 +33,7 @@
     </header>
 
     <main class="main-container">
-        <div class="item-card">
+        <div class="item-card" id="main-card">
             <div class="item-description">
                 <h1 class="item-title">
                     Tênis esportivo para corrida top
@@ -44,39 +44,41 @@
             </div>
             <div class="item-gallery">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                    <img
-                        data-src="assets/img/tenis-1-galeria.png"
-                        class="swiper-lazy"
-                    />
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        <img
+                            data-src="assets/img/tenis-1-galeria.png"
+                            class="swiper-lazy"
+                        />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                        <img
+                            data-src="assets/img/tenis-2-galeria.png"
+                            class="swiper-lazy"
+                        />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                        <img
+                            data-src="assets/img/tenis-3-galeria.png"
+                            class="swiper-lazy"
+                        />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                    <img
-                        data-src="assets/img/tenis-2-galeria.png"
-                        class="swiper-lazy"
-                    />
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                    </div>
-                    <div class="swiper-slide">
-                    <img
-                        data-src="assets/img/tenis-3-galeria.png"
-                        class="swiper-lazy"
-                    />
-                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="main-gallery">
+                    <img src="assets/img/tenis-1-ampliado.png" alt="" class="img-big">
+                    <div class="img-selector">
+                        <img src="assets/img/tenis-2-galeria.png" alt="">
+                        <img src="assets/img/tenis-1-galeria.png" alt="">
+                        <img src="assets/img/tenis-3-galeria.png" alt="">
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-                <!-- <img src="assets/img/tenis-1-ampliado.png" alt="" class="img-big">
-                <div class="img-selector">
-                    <img src="assets/img/tenis-2-galeria.png" alt="">
-                    <img src="assets/img/tenis-1-galeria.png" alt="">
-                    <img src="assets/img/tenis-3-galeria.png" alt="">
-                </div> -->
             </div>
         </div>
 
@@ -118,19 +120,95 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-                <!-- <img src="assets/img/tenis-1-ampliado.png" alt="" class="img-big">
-                <div class="img-selector">
-                    <img src="assets/img/tenis-2-galeria.png" alt="">
-                    <img src="assets/img/tenis-1-galeria.png" alt="">
-                    <img src="assets/img/tenis-3-galeria.png" alt="">
-                </div> -->
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="item-description">
+                <h1 class="item-title">
+                    Tênis esportivo para corrida top
+                </h1>
+                <p>Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e musculoso.</p>
+                <h2 class="price">R$ 1.000,00</h2>
+                <a href="#"><button class="btn btn-buy">Comprar</button></a>
+            </div>
+            <div class="item-gallery">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <img
+                        data-src="assets/img/tenis-1-galeria.png"
+                        class="swiper-lazy"
+                    />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                    <img
+                        data-src="assets/img/tenis-2-galeria.png"
+                        class="swiper-lazy"
+                    />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                    <img
+                        data-src="assets/img/tenis-3-galeria.png"
+                        class="swiper-lazy"
+                    />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="item-description">
+                <h1 class="item-title">
+                    Tênis esportivo para corrida top
+                </h1>
+                <p>Esse tênis tem o intuito de te deixar ainda mais fitness, focado, e musculoso.</p>
+                <h2 class="price">R$ 1.000,00</h2>
+                <a href="#"><button class="btn btn-buy">Comprar</button></a>
+            </div>
+            <div class="item-gallery">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <img
+                        data-src="assets/img/tenis-1-galeria.png"
+                        class="swiper-lazy"
+                    />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                    <img
+                        data-src="assets/img/tenis-2-galeria.png"
+                        class="swiper-lazy"
+                    />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                    <img
+                        data-src="assets/img/tenis-3-galeria.png"
+                        class="swiper-lazy"
+                    />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
             </div>
         </div>
 
     </main>
 
     <footer class="footer-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/geFi-ZpN2ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/geFi-ZpN2ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class></iframe>
 
         <ul class="footer-links">
             <li class="footer-social"><a href="#">facebook</a></li>
