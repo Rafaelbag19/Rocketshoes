@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #9C9696;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;   
+    margin: 0;
+    padding: 0; 
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+/* Menu */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background);
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar-links li:hover {
+    background-color: var(--text-description);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* Menu End */
+
+iframe {
+    height: auto;
+    width: auto;
+}
+
+input.search {
+    border: none;
+    outline: none;
+    width: 220px;
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("../img/icon-search.svg") no-repeat 13px center;
+}
+
+.main-container {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
